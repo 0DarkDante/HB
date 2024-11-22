@@ -1,0 +1,1173 @@
+@import url(https://db.onlinewebfonts.com/c/0a04764859a18deebd98179d29127ea3?family=Marquette);
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Мінімальна висота сторінки на всю висоту вікна браузера */
+  margin: 0; /* Забирає зовнішні відступи */
+  background: #F4EBD6;
+  height: 10000px;
+}
+
+main {
+  flex-grow: 1; /* Розтягнути основний контент, щоб заповнити вільний простір */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  margin-top: 10px;
+}
+
+.container {
+  max-width: 1550px;
+  margin: 0 auto; /* Центрувати контейнер по горизонталі */
+  flex: 1;
+}
+
+footer {
+  background: #172A5C;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Загальні стилі для тексту у футері */
+.footer-text1 {
+  color: #FFF;
+  text-align: center;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  font-family: 'Anonymous Pro', sans-serif;
+}
+
+/* Стилі для першої частини тексту (Vadik) */
+.first-part {
+  color: #FFF;
+  font-family: 'Anonymous Pro', sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+/* Стилі для символу "&" (амперсанд) */
+.ampersand {
+  transform: rotate(-1.749deg);
+  text-align: center;
+  font-family: Marquette, sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 121.922%; /* 78.03px */
+  text-transform: uppercase;
+  padding: 0 5px;
+}
+
+.footer-text2 {
+  color: #FFF;
+  text-align: center;
+  font-family: 'Anonymous Pro', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 25px 0;
+}
+
+.headNav {
+  list-style-type: none; /* Прибирає маркери (точки) */
+  padding: 0; /* Прибирає внутрішні відступи */
+  margin: 0; /* Прибирає зовнішні відступи */
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 181px;
+}
+
+.headNav li {
+  min-width: 100px;
+}
+
+.headNav>li>a {
+  color: #172A5C;
+  font-family: 'Anonymous Pro', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none; /* Прибирає підкреслення з посилань */
+}
+
+.headNav>li>a.active {
+  font-family: 'Anonymous Pro', sans-serif;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none; 
+}
+
+/* Стилі для блоків фотогалереї */
+.block_foto_galery {
+  flex: 0 0 calc(43% - 10px); /* Розділити на 2 колонки з відступом */
+  margin-bottom: 20px; /* Відступ між блоками у вертикальному напрямку */
+  padding: 31.909px 30.149px 39.439px 30.15px; /* Перенесення властивостей padding до одного рядка */
+  background: #FFF;
+  box-sizing: border-box; /* Забезпечити правильний розрахунок ширини */
+  text-align: center;
+}
+
+.block_foto_galery img {
+  max-width: 100%; /* Робимо фото адаптивними */
+  height: auto; /* Зберігаємо пропорції фото */
+  width: 100%; /* Додати 100% ширину для розтягнення фото в колонці */
+  max-width: 450px; /* Фіксований розмір фото (200px) */
+}
+
+.block_foto_galery video {
+  max-width: 100%; /* Робимо фото адаптивними */
+  height: auto; /* Зберігаємо пропорції фото */
+  width: 100%; /* Додати 100% ширину для розтягнення фото в колонці */
+  max-width: 450px; /* Фіксований розмір фото (200px) */
+}
+
+.block_foto_galery p {
+  color: #1D1D1D;
+  font-family: Anonymous Pro;
+  font-size: 25.467px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.block_foto_galery:nth-child(odd) {
+  margin-left: 100px; /* Відступ зліва для лівих блоків */
+}
+
+.block_foto_galery:nth-child(even) {
+  margin-right: 100px; /* Відступ справа для правих блоків */
+}
+
+/* головна сторінка */
+.block-1 {
+  margin-bottom: 75px;
+}
+
+.block-1Text1 {
+  color: #9B171F;
+  font-family: Anonymous Pro;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.block-1Text2 {
+  color: #9B171F;
+  font-family: Anonymous Pro;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-top: 5px;
+  order: -1;
+}
+
+.block-1 > p {
+  color: #172A5C;
+  font-family: Anonymous Pro;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 35px;
+}
+
+.miniBlock1 {
+  position: relative; /* Встановлюємо позицію relative для контейнера */
+  margin-top: 20px;
+  display: flex; /* Додаємо це для зміни порядку відображення дітей */
+  flex-direction: column; /* Встановлюємо вертикальну орієнтацію для дітей */
+}
+
+.miniBlock1 img {
+  max-width: 100%; /* Робимо зображення адаптивним */
+  height: auto; /* Зберігаємо пропорції зображення */
+}
+
+.miniBlock1p {
+  position: absolute; /* Встановлюємо позицію absolute для тексту */
+  top: 50%; /* Верхній край тексту розташовується посередині блоку */
+  left: 50%; /* Лівий край тексту розташовується посередині блоку */
+  transform: translate(-50%, -50%); /* Це центрує текст відносно середини блоку */
+  z-index: 1; /* Задаємо зверхній шар тексту, щоб він накладався на зображення */
+  text-align: center; /* Вирівнювання тексту по центру */
+  padding: 10px; /* Відступи внутрішнього тексту */
+  padding-bottom: 100px;
+}
+
+.block-2 {
+  width: 100%;
+  height: 471px;
+  background: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Vertically space the elements */
+  align-items: center;
+  position: relative; 
+}
+
+.block-2 p {
+  color: #172A5C;
+  font-family: Anonymous Pro;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%; /* Adjust as needed to vertically center it */
+  left: 50%; /* Adjust as needed to horizontally center it */
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.imgAutumn {
+  transform: rotate(-1.749deg);
+  color: #F4EBD6;
+  text-align: center;
+  font-family: Marquette;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 121.922%; /* 117.045px */
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%; /* Adjust as needed to vertically center it */
+  left: 50%; /* Adjust as needed to horizontally center it */
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.imgMemories {
+  width: 355px;
+  height: 230px;
+  flex-shrink: 0;
+  position: absolute;
+  top: -35px;
+  left: 30px;
+}
+
+.block-2 img:last-child {
+  width: 436px;
+  height: 369px;
+  flex-shrink: 0;
+  position: absolute;
+  bottom: -65px;
+  right: -10px;
+}
+
+.block-3 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.left-part {
+  flex: 1;
+}
+
+.photo-frame {
+  padding: 20px; /* Внутрішні відступи для фотокадра */
+  /* Додайте фотографію як фон або замініть цей блок зображеннями */
+  background-image: url('/шлях-до-фотографії.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px; /* Висота фотокадра */
+}
+
+.right-part {
+  flex: 1;
+  position: relative;
+  padding: 20px; /* Внутрішні відступи для правої частини */
+}
+
+.right-part h2 {
+  color: #9B171F;
+  font-family: Anonymous Pro;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  max-width: 80%;
+}
+
+.right-part-new {
+  max-height: 880px;
+}
+
+.right-part_p {
+  text-align: justify;
+  color: #172A5C;
+  font-family: Anonymous Pro;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 467px;
+  margin: 0 0 20px 237px;
+}
+
+.message-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.message {
+  padding: 0px 10px;
+  border-radius: 20px;
+  margin: 5px;
+  max-width: 50%;
+  font-family: Anonymous Pro;
+  font-size: 19.311px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.message.message_Vadik {
+  align-self: flex-end;
+  background-color: #125688;
+  color: #fff;
+}
+
+.message.message_Anya {
+  align-self: flex-start;
+  background-color: #fff;
+  color: #000;
+}
+
+.photo-frame {
+  padding: 20px 20px 50px 20px;
+  width: 295px;
+  height: 450px;
+  overflow: hidden; 
+  background-color: #fff;
+  position: relative;
+  transform: rotate(-4.99deg);
+  top: -30px;
+  left: 100px;
+}
+
+.loveNY {
+  position: absolute;
+  top: -20px;
+  left: 295px;
+  z-index: 3;
+}
+
+.photo-frame img {
+  width: 100%; /* Заповнює ширину рамки */
+  height: 100%; /* Заповнює висоту рамки */
+  object-fit: cover;
+}
+
+.photo-frame_big{
+  width: 450px;
+  height: 650px;
+}
+
+.date_mini_block {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #9B171F;
+  font-family: Anonymous Pro;
+  font-size: 16.868px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.imgb3nakl {
+  width: 351.023px;
+  height: 130.008px;
+  transform: rotate(-16.087deg);
+  flex-shrink: 0;
+  position: relative; /* Встановлення позиції абсолютної для зображення */
+  top: 20px;
+  left: 171px;
+  z-index: 2;
+}
+
+.block-4 p {
+  color: #F2F0E6;
+  font-family: Anonymous Pro;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.block-4 {
+  background: #172A5C;
+}
+
+.image-container_block-4 {
+  width: 386.503px;
+  height: 511.225px;
+  flex-shrink: 0;
+  width: 100%; /* Установите ширину контейнера по вашему усмотрению */
+  height: 50%; /* Установите высоту контейнера так, чтобы отобразить только половину изображения */
+  overflow: hidden; /* Обрезать все, что выходит за пределы контейнера */
+  position: relative;
+  bottom: 60px;
+}
+
+.image-container_block-4 img {
+  width: 100%; /* Ширина изображения должна быть 100% от родительского контейнера */
+  height: auto; /* Автоматическая высота, чтобы сохранить соотношение сторон */
+  position: absolute; /* Позиционирование изображения относительно родительского контейнера */
+  top: -80px;
+  left: 0;
+  transform: translateX(-73%);
+}
+
+.image-container_block-4-2 {
+  width: 7%; /* Установите ширину контейнера по вашему усмотрению */
+  height: 50%; /* Установите высоту контейнера так, чтобы отобразить только половину изображения */
+  overflow: hidden; /* Обрезать все, что выходит за пределы контейнера */
+  position: relative;
+  top: 285px;
+  left: 721px;
+  
+}
+
+.image-container_block-4-2 img {
+  width: 100%; /* Ширина изображения должна быть 100% от родительского контейнера */
+  height: auto; /* Автоматическая высота, чтобы сохранить соотношение сторон */
+  position: absolute; /* Позиционирование изображения относительно родительского контейнера */
+  top: 0; /* Размещение изображения вверху контейнера */
+  left: 0; /* Размещение изображения влево контейнера */
+  transform: translateY(-22%);
+}
+
+.block-5 {
+  display: flex; /* Используем flex-контейнер для разделения на два блока */
+  justify-content: space-between; 
+  margin-bottom: -280px;
+}
+
+.left-part_block5 h2 {
+  color: #9B171F;
+  font-family: Anonymous Pro;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-left: 30px;
+}
+
+.right-part_p_block5 {
+  color: #172A5C;
+  font-family: Anonymous Pro;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.message-block_block-5 {
+  margin-left: 25px;
+}
+
+.photo-frame_block5_1 {
+  display: inline-flex;
+  transform: rotate(2.732deg);
+}
+
+.photo-frame_block5_2 {
+  display: flex;
+  width: 358px;
+  transform: rotate(6.637deg);
+}
+
+.right-part_block5 {
+  position: relative;
+}
+
+.photo-frame_block5_1 {
+  position: relative;
+  top: 20px;
+  left: 10px;
+}
+
+.photo-frame_block5_2 {
+  position: relative;
+  z-index: 2;
+  top: -400px;
+  left: 300px;
+}
+
+img[src="/IMG/2.png"] {
+  position: absolute;
+  top: 25px;
+  left: 305px;
+  z-index: 3; /* Третье изображение накладывается на первое */
+  width: 272px;
+  height: 213px;
+  transform: rotate(-142.788deg);
+  flex-shrink: 0;
+}
+
+.photo-frame_block5_1 img {
+  z-index: 1; /* Первое изображение нижнего слоя */
+}
+
+.block-6 {
+  margin-top: -55px;
+}
+
+.block-6 p {
+  top: 44%;
+}
+
+.check-mark {
+  position: absolute;
+}
+
+.photo-frame_block-7 {
+  margin-top: 100px;
+}
+
+.right-part_block-7 h2{
+  margin-top: 15px;
+  position: relative;
+}
+
+.right-part_p_block7 {
+  margin: -25px 0 20px 237px;
+}
+
+.block-8 img:last-child  {
+  width: 253.597px;
+  height: 335.432px;
+  transform: rotate(-69.837deg);
+  flex-shrink: 0;
+  position: absolute;
+  top: 260px;
+  left: 300px;
+}
+
+.photo-frame_block9_2 {
+  width: 340px;
+  height: 455px;
+  transform: rotate(4.519deg);
+  flex-shrink: 0;
+}
+
+.block-9 {
+  margin-top: 70px;
+}
+
+.block-9 p {
+  top: 43%;
+}
+
+.block-10 {
+  width: 1550px;
+  height: 800px;
+}
+
+.block-10 h2 {
+  color: #9B171F;
+  font-family: Anonymous Pro;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-left: 25px;
+}
+
+.plan {
+  display: flex; 
+  align-items: center; 
+  margin-left: 185px;
+}
+
+.plan img {
+  width: 25px;
+  height: 28px;
+  flex-shrink: 0;
+}
+
+.plan p {
+  color: #172A5C;
+  font-family: Anonymous Pro;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 20px;
+}
+
+.right-part_block-10_IMG {
+  width: 473.486px;
+  height: 626.278px;
+  transform: rotate(5.692deg);
+  flex-shrink: 0;
+  position: relative;
+  top: -900px;
+  left: 950px;
+}
+
+.btn {
+  width: 521.62px;
+  height: 121.307px;
+  flex-shrink: 0;
+  font-size: 1.2rem;
+  padding: 1rem 2.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: rgb(14, 14, 26);
+  color: rgb(234, 234, 234);
+  font-weight: 700;
+  transition: 0.6s;
+  box-shadow: 0px 0px 60px #1f4c65;
+  -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+}
+
+.btn:active {
+  scale: 0.92;
+}
+
+.btn:hover {
+  background: rgb(2,29,78);
+  background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+  color: rgb(4, 4, 38);
+}
+
+.block-11 {
+  height: 812px;
+  width: 1550px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.block-11 h2{
+  color: #9B171F;
+  font-family: Anonymous Pro;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.block-11_IMG1 {
+  color: #FFF;
+  text-align: center;
+  font-family: Marquette;
+  font-size: 465.577px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 567.64px;
+  text-transform: uppercase;
+  position: relative;
+  bottom: 70px;
+  left: 0px;
+}
+
+.block-11_IMG2 {
+  color: #FFF;
+  text-align: center;
+  font-family: Marquette;
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 156.06px;
+  text-transform: uppercase;
+  position: relative;
+  bottom: 450px;
+  left: 120px;
+}
+
+.block-11_IMG3 {
+  color: #FFF;
+  text-align: center;
+  font-family: Marquette;
+  font-size: 277px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 121.922%; /* 337.724px */
+  text-transform: uppercase;
+  position: relative;
+  bottom: -20px;
+  left: 550px;
+}
+
+.block-11_IMG4 {
+  color: #FFF;
+  text-align: center;
+  font-family: Marquette;
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 121.922%; /* 156.06px */
+  text-transform: uppercase;
+  position: relative;
+  bottom: 680px;
+  left: 630px;
+}
+
+.block-11_IMG5 {
+  transform: rotate(-1.749deg);
+  color: #FFF;
+  text-align: center;
+  font-family: Marquette;
+  font-size: 277px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 121.922%; /* 337.724px */
+  text-transform: uppercase;
+  position: relative;
+  bottom: 485px;
+  left: 725px;
+}
+
+.photo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  height: 0px;
+}
+
+.block-12 p:nth-child(1) { 
+  color: rgba(244, 235, 214, 0.20);
+  text-align: center;
+  font-family: Marquette;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 121.922%; /* 117.045px */
+  text-transform: uppercase;
+  margin-bottom: 10px; /* Відступ знизу */
+  margin-top: 0px;
+}
+
+.block-12 p:nth-last-child { 
+  color: #F2F0E6;
+  font-family: Anonymous Pro;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center; /* Вирівнювання тексту по центру */
+  margin-top: 10px; /* Відступ зверху */
+}
+
+#answear {
+  color: #172A5C;
+  font-family: Anonymous Pro;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+@media screen and (max-width: 768px) {
+  nav {
+    width: 1550px;
+  }
+
+  .headNav {
+    text-align: center;
+    padding: 20px 0px 20px 0px; /* Добавьте вертикальные отступы */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .headNav li {
+    margin: 10px 0; /* Отступы для элементов меню */
+    text-align: center;
+    display: block;
+  }
+
+  .headNav {
+    gap: 35px;
+  }
+
+  .galery_main {
+    display: flex;
+    flex-direction: column;
+    width: 768px;
+    margin-left: 410px
+  }
+  
+  .block_foto_galery {
+    width: 100%; /* Занимать всю доступную ширину экрана */
+    margin-right: 0; /* Уберите правый отступ для одиночных блоков */
+  }
+
+  footer {
+    width: 1550px;
+  }
+
+  .footer-text1 {
+    margin-right: 80px;
+  }
+
+  .footer-text2 {
+    margin-right: 75px;
+  }
+
+  .block_foto_galery {
+    text-align: center; /* Центрируем содержимое */
+    margin-left: 0; /* Убираем левый отступ */
+    margin-right: 0; /* Убираем правый отступ */
+
+  }
+
+  .galery_main {
+    display: block;
+  }
+
+  .block_foto_galery img,
+  .block_foto_galery video {
+    width: 100%; /* Занимать всю доступную ширину экрана */
+    height: auto; /* Поддерживать пропорции */
+  }
+
+  .block_foto_galery:nth-child(odd) {
+    margin-left: 0px;
+  }
+}
+
+.video-block {
+  position: relative;
+  display: inline-block; /* Щоб рамка адаптувалася до відео */
+  padding: 8px; /* Відступ між відео та рамкою */
+  border-radius: 15px; /* Закруглення кутів рамки */
+  background: linear-gradient(45deg, #ff0000, #ffbc4e, #1412a1, #80ff66, #ff00ff);
+  background-size: 300% 300%; /* Масштаб для анімації */
+  animation: gradient-flow 6s infinite ease-in-out; /* Анімація кольорів */
+  max-width: 400px; /* Максимальна ширина блоку */
+  max-height: 600px; /* Максимальна висота блоку */
+}
+
+.video-block video {
+  display: block;
+  width: 100%; /* Відео займає всю ширину блоку */
+  height: 450px; /* Висота адаптується пропорційно */
+  border-radius: 10px; /* Закруглення кутів відео */
+}
+
+/* Анімація переливу кольорів */
+@keyframes gradient-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#confetti-btn {
+  position: relative;
+    top: -135px;
+    left: 150px;
+    bottom: 335px;
+    height: 70px;
+    width: 280px;
+    font-size: 18px;
+}
+
+#confetti-btn2 {
+  left: 275px;
+    position: relative;
+    bottom: 335px;
+    height: 70px;
+    width: 280px;
+    font-size: 18px;
+}
+
+.card {
+  position: relative;
+  bottom: -60px;
+  width: 400px;
+  height: 535px;
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card__image {
+  width: 380px;
+  height: 515px;
+  object-fit: cover;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card:hover {
+  transform: rotate(-5deg) scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card__content {
+  background: linear-gradient(135deg, #fffffff5, #3a4b8a, #ffffff98);
+
+  /* border-radius: 1.2rem; */
+  box-shadow: 0px 1rem 1.5rem -0.9rem #000000e1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  opacity: 0;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card:hover .card__content {
+  transform: translate(-50%, -50%) rotate(0deg);
+  opacity: 1;
+}
+
+.card__title {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+}
+
+.card__description {
+  margin: 10px 0 0;
+  font-size: 23px;
+  color: #000000;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+.card:hover .card__image {
+  transform: rotate(-45deg) scale(0);
+}
+
+.photo-card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo-card__image {
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 4px;
+}
+
+.photo-card__overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.photo-card:hover .photo-card__overlay {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+.photo-card__title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff0f7b;
+  margin-bottom: 10px;
+}
+
+.photo-card__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.photo-card__list li {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* From Uiverse.io by wilsondesouza */ 
+ul {
+  list-style: none;
+}
+
+.example-2 {
+  position: absolute;
+  max-width: 300px;
+  left: 580px;
+  bottom: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.example-2 .icon-content {
+  margin: 3px 10px;
+  position: relative;
+  padding: 0.5rem;
+}
+.example-2 .icon-content .tooltip {
+  width: 646px;
+  position: absolute;
+  top: 100%;
+  right: 110%;
+  transform: translateY(200%);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 19px;
+  transition: all 0.3s ease;
+}
+.example-2 .icon-content:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  top: -50px;
+}
+.example-2 .icon-content a {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #4d4d4d;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.example-2 .icon-content a:hover {
+  box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+}
+.example-2 .icon-content a svg {
+  position: relative;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+}
+.example-2 .icon-content a:hover {
+  color: white;
+}
+.example-2 .icon-content a .filled {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+}
+.example-2 .icon-content a:hover .filled {
+  height: 100%;
+}
+
+.example-2 .icon-content a[data-social="linkedin"] .filled,
+.example-2 .icon-content a[data-social="linkedin"] ~ .tooltip {
+  background-color: #0274b3;
+}
+
+.example-2 .icon-content a[data-social="github"] .filled,
+.example-2 .icon-content a[data-social="github"] ~ .tooltip {
+  background-color: #24262a;
+}
+.example-2 .icon-content a[data-social="instagram"] .filled,
+.example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5b51db,
+    #b33ab4,
+    #c135b4,
+    #e1306c,
+    #fd1f1f
+  );
+}
+.example-2 .icon-content a[data-social="youtube"] .filled,
+.example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
+  background-color: #ff0000;
+}
+
+.love-header {
+  width: 300px;
+  position: absolute;
+  top: 176px;
+  left: 469px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #9B171F;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+
+.main-footer {
+  color: red;
+  width: 1000px;
+}
