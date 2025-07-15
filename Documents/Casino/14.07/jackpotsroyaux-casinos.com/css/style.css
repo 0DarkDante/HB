@@ -1,0 +1,228 @@
+.main-nav-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: linear-gradient(135deg, #3b2f00, #5c5a02, #1c1800);
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #FF8F00;
+}
+
+/* === Бургер === */
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.burger span {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* === Анімація на активний стан === */
+.burger.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.burger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* === Мобільне меню === */
+@media (max-width: 768px) {
+  .main-nav {
+    flex-direction: column;
+    display: none;
+    background-color: #1c1800;
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .main-nav.show {
+    display: flex;
+  }
+
+  .burger {
+    display: flex;
+  }
+}
+
+.offers-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  background: transparent;
+
+  margin-top: -60px;
+  /* отрицательный отступ вверх — подними на 60px */
+  position: relative;
+  /* для z-index */
+  z-index: 10;
+  /* чтобы перекрывал верхний блок */
+}
+
+.offer-block {
+      background: #0000002e;
+  color: #333;
+  border-radius: 12px;
+    border: 3px solid #d6d206;
+  flex: 1 1 calc(25% - 20px);
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  box-shadow: none;
+}
+
+.offer-block:hover {
+  transform: translateY(-6px);
+  border-color: #FF8F00;
+  /* на ховере бордер становится янтарным */
+}
+
+.offer-header {
+  display: flex;
+  flex-direction: column;
+  /* теперь колоночный, чтобы звезды вниз */
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.offer-logo {
+  width: 120px;
+  /* увеличена картинка */
+  height: auto;
+  object-fit: contain;
+}
+
+.offer-rating {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #222;
+  margin: 0;
+}
+
+.offer-stars {
+  font-size: 1.6rem;
+  color: #FF8F00;
+  user-select: none;
+  margin-top: 0.3rem;
+}
+
+.offer-description {
+  font-size: 1.1rem;
+  margin: 1rem 0 1.5rem;
+  color: #444;
+  text-align: center;
+}
+
+.offer-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+  width: 100%;
+}
+
+.offer-features li {
+  position: relative;
+  padding-left: 1.5em;
+  margin-bottom: 0.7rem;
+  font-weight: 600;
+  color: #5c5a02;
+  /* бронза */
+}
+
+.offer-features li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #FF8F00;
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+.offer-button {
+  background: linear-gradient(90deg, #FF8F00, #5c5a02);
+  color: #1c1800;
+  font-weight: 700;
+  padding: 0.75rem 2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(255, 143, 0, 0.7);
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  align-self: stretch;
+  text-align: center;
+  display: block;
+}
+
+.offer-button:hover,
+.offer-button:focus {
+  background: linear-gradient(90deg, #5c5a02, #FF8F00);
+  box-shadow: 0 6px 15px rgba(255, 143, 0, 1);
+  transform: scale(1.05);
+  outline: none;
+}
+
+/* Адаптивность */
+
+@media (max-width: 1024px) {
+  .offer-block {
+    flex: 1 1 calc(50% - 20px);
+    max-width: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .offer-block {
+    flex: 1 1 100%;
+  }
+}
